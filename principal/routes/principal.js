@@ -41,12 +41,12 @@ var Hod = require("../models/hod");
 var Register = require("../models/register")
 
 router.get("/principal", function(req, res){
-   res.redirect("/employees"); 
+   res.render("principal");
 });
 
 // INDEX ROUTE
 router.get("/employees", function(req, res){
-       res.render("");
+       res.render("employees");
 });
 
 router.get("/employees/hods", function(req, res){
