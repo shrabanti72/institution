@@ -117,9 +117,9 @@ router.delete("/employees/hods/:id", function(req, res){
    //destroy blog
    Hod.findByIdAndRemove(req.params.id, function(err){
        if(err){
-           res.redirect("/blogs");
+           res.redirect("/employees/hods");
        } else {
-           res.redirect("/blogs");
+           res.redirect("/employees/hods");
        }
    })
    //redirect somewhere
